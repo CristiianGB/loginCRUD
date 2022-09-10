@@ -1,10 +1,9 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./footerStyles.css"
 
 export const Footer = () => (
 	<footer className="footer mt-auto py-3 text-center">
-		<p>
-			Made with <i className="fa fa-heart text-danger" /> by{" "}
-			<a href="http://www.4geeksacademy.com">4Geeks Academy</a>
-		</p>
+		<span className="notienescuenta">¿No tienes cuenta?</span><Link to="/signup" className="mx-2">Regístrate aquí.</Link>
 	</footer>
 );
