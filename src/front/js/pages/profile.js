@@ -9,7 +9,7 @@ export const Profile = () => {
 	const { store, actions } = useContext(Context);
 	const [user, setUser] = useState({})
 	let navigate = useNavigate()
-	console.log(store)
+	
 	
 	
 	useEffect(()=>{
@@ -54,7 +54,7 @@ export const Profile = () => {
                     <li><i className="icono fas fa-user"></i>{store?.user?.username}</li>
                     <li><i className="icono fas fa-envelope"></i>{store?.user?.email}</li>
                 </ul>
-				{console.log(store.user)}
+				
                 <ul className="lista-datos">
                     <li><i className="icono fas fa-key"></i>Contraseña: <a href="#">mostrar</a> </li>
                     <li><i className="icono fas fa-user-check"></i>Activo:<i className={store?.user?.is_active?iconoTrue:iconoFalse}></i></li>
